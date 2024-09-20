@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 중앙 정렬 공식 : 부모 태그에 width 적용 후 margin: 0 auto 주기 */
+        body{width: 560px; margin: 0 auto;}
+        #aside{width: 200px; float: left; background-color: pink;}
+        /* 30px이 비게 됨, 30px는 여백이 되는 것 */
+        #section{width: 330px; float: right; background-color: aquamarine;}
+        #clear{clear: both;}
+    </style>
+</head>
+<body>
+    <!-- #header>h1{header} -->
+    <div id="header">
+        <h1>header</h1>
+    </div>
+    <!-- #navigation>h1{Navigation} -->
+    <div id="navigation">
+        <h1>Navigation</h1>
+    </div>
+    <!-- #wrap>((#aside>(h1{ASide}+p{lorem lorem}))+#section>(h1{section}+p{mylorem})) -->
+    <!-- tab : 들여쓰기 -->
+    <!-- shift tap : 내어쓰기 -->
+    <div id="aside">
+        <h1>ASide</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, vitae itaque qui voluptates natus sunt error deserunt totam consequuntur in odio molestias, aspernatur ratione sed, omnis inventore rem alias earum?</p>
+    </div>
+    <div id="section">
+        <h1>section</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ullam, consequuntur architecto ipsam veritatis, in unde fugit repellendus voluptatibus omnis, praesentium explicabo similique quas provident nesciunt minus perferendis! Labore, accusantium?</p>
+    </div>
+    <div id="clear"></div> <!-- clear:both 적용한 태그, footer가 위로 올라가지 않게 -->
+    <!-- #footer>h1{footer} -->
+    <div id="footer">
+        <h1>footer</h1>
+    </div>
+</body>
+</html>
