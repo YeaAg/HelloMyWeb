@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="one">lorem1</h1>
+    <h1 id="two">lorem2</h1>
+    <h1 id="three">lorem3</h1>
+    <h1 id="four">lorem4</h1>
+    <script>
+        //one,three가 jQuery 적용
+        //two, four가 바닐라 js 적용
+        //jQuery의 핵심 $
+        //$ = document
+        $('#one').css('background-color','yellow').css('color','blue')
+        let two = document.querySelector('#two')
+        two.style.color = 'pink'
+        two.style.background = 'black'
+        let three = $('#three')
+        three.css('background-color','springgreen').css('color','green')
+        let four = document.getElementById('four')
+        four.style.color = 'hotpink'
+        four.style.background = 'orange'
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            gap:10px;
+            /* 가로 3칸, 칸 별 픽셀 사이즈 지정 */
+            grid-template-columns: 200px 400px 200px;
+            /* 세로 2칸에 대하여 픽셀 사이즈 지정 */
+            grid-template-rows: 200px 200px;
+        }
+        #container>div{
+            border: 1px solid black;
+            background-color: blueviolet;
+        }
+        #cell_one{
+            /* 슬래시가 나눗셈이 아니고 start, end 표시임 */
+            grid-row-start: 1;
+            grid-row-end:2;
+            /* grid-row : 1/2 */
+            grid-column: 1/3;
+            /* grid-column-start:1 */
+            /* grid-column-end:3 */
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="cell_one"></div><!--너비가 600px이 됨-->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <!-- <div></div> -->
+    </div>
+</body>
+</html>

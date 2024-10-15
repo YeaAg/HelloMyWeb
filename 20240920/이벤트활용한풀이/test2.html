@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>당신은 언제 태어나셨나요?</button>
+    <input type="text">
+    <img src="" alt="">
+    <script>
+        let btn = document.querySelector('button')
+        let input = document.querySelector('input')
+        let img = document.querySelector('img')
+        btn.onclick = function(){
+            if(input.value==''){
+                alert('공백ㄴㄴ')
+            }
+            else
+            {
+                switch (input.value/1) {
+                    case 12:
+                    case 1:
+                    case 2:
+                        img.src = '겨울.png'
+                        break
+                
+                    case 3:
+                    case 4:
+                    case 5:
+                        img.src = '봄.png'
+                        break
+                        
+                    case 6:
+                    case 7:
+                    case 8:
+                        img.src = '여름.png'
+                        break
+                        
+                    case 9:
+                    case 10:
+                    case 11:
+                        img.src = '가을.png'
+                        break
+                    default:
+                        break
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>
